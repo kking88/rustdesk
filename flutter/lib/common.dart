@@ -2878,6 +2878,7 @@ Future<bool> canBeBlocked() async {
   return access_mode == 'view' || (access_mode.isEmpty && !option);
 }
 
+// to-do: web not implemented
 Future<void> shouldBeBlocked(RxBool block, WhetherUseRemoteBlock? use) async {
   if (use != null && !await use()) {
     block.value = false;
@@ -3645,7 +3646,7 @@ get defaultOptionTheme => isCustomClient ? 'system' : '';
 get defaultOptionYes => isCustomClient ? 'Y' : '';
 get defaultOptionNo => isCustomClient ? 'N' : '';
 get defaultOptionWhitelist => isCustomClient ? ',' : '';
-get defaultOptionAccessMode => isCustomClient ? 'custom' : '';
+get defaultOptionAccessMode => isCustomClient ? 'full-access' : '';
 get defaultOptionApproveMode => isCustomClient ? 'password-click' : '';
 
 bool whitelistNotEmpty() {
