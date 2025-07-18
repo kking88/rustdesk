@@ -942,7 +942,7 @@ class _SafetyState extends State<_Safety> with AutomaticKeepAliveClientMixin {
       } else if (accessMode == 'view') {
         mode = _AccessMode.view;
       } else {
-        mode = _AccessMode.custom;
+        mode = _AccessMode.full;
       }
       String initialKey;
       bool? fakeValue;
