@@ -965,12 +965,12 @@ class _SafetyState extends State<_Safety> with AutomaticKeepAliveClientMixin {
         ComboBox(
             keys: [
               defaultOptionAccessMode,
-              'full',
+              'Custom',
               'view',
             ],
             values: [
-              translate('Custom'),
               translate('Full Access'),
+              translate('Custom'),
               translate('Screen Share'),
             ],
             enabled: enabled && !isOptionFixed(kOptionAccessMode),
