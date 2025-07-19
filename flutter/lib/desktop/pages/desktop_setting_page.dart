@@ -760,8 +760,8 @@ class _GeneralState extends State<_General> {
 }
 
 enum _AccessMode {
-  custom,
   full,
+  custom,
   view,
 }
 
